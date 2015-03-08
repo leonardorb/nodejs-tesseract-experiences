@@ -1,0 +1,10 @@
+{
+  "name" : "nodejs_tesseract_experiences",
+  "version" : "0.0.1",
+  "description" : "Labs time with nodejs and tesseract",
+  "author" : "Leo <rb.leonardo@gmail.com>",
+  "dependencies" : {
+    "node-tesseract" : "^0.2.6",
+    "underscore" : "1.8.2"
+  }
+}
