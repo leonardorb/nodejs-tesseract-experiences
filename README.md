@@ -17,7 +17,7 @@ Labs time with Tesseract and node.
 
 `npm install`
 
-### Start working with your documents/receipts:
+### Start working with your documents/receipts
 
 You can delete everything under `/data_extracted/` and `/documents/`. They're there just to exemplify the experience.
 
@@ -28,3 +28,7 @@ Add your new documents/receipts at `/documents/` and run:
 You should be able to see your extracted data under `/data_extracted/`.
 
 ![](http://d.pr/i/tJne+)
+
+## Other notes:
+
+Missing: tests. You can use this code as you like. No guarantees.
