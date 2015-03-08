@@ -26,3 +26,5 @@ Add your new documents/receipts at `/documents/` and run:
 `node extract.js`
 
 You should be able to see your extracted data under `/data_extracted/`.
+
+![](http://d.pr/i/tJne+)
