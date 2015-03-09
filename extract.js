@@ -40,18 +40,20 @@ Extractor.prototype.extract = function(count, files, callback) {
       _callback();
     } else {
       //console.log(text);
+      var exportedName = _this.exportPath + Date.now() + '-' + _files[_count];
       _this.isReceipt(text, function(isReceipt){
         if(isReceipt) {
           console.log('It\'s a receipt!');
+          exportedName = exportedName + '_receipt';
         } else {
           console.log('I\'m not saying that this is NOT a receipt, but I couldn\'t identify it as such.')
         }
-        fs.writeFile(_this.exportPath + Date.now() + '-' + _files[_count] + '.txt', text, function(err){
+        fs.writeFile(exportedName + '.txt', text, function(err){
           if(err) {
             console.log(err);
             console.log('Error while exporting data for' + _files[_count] + '\n');
           } else {
-            console.log('Data exported to: ' + _this.exportPath + _files[_count] + '\n');
+            console.log('Data exported to: ' + exportedName + '.txt' + '\n');
           }
           if(_count === _files.length-1) {
             _callback();
